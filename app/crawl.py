@@ -27,7 +27,7 @@ def crawl_a():  # Định nghĩa hàm crawl_a dùng để thu thập dữ liệu
                 article_data = {   # Tạo một dictionary chứa thông tin của bài viết
                     "title": title_tag.a.get('title', '').strip(),             # Tiêu đề bài viết
                     "url": article_url,                                        # Đường dẫn bài viết
-                    "summary": item.p.text.strip() if item.p else '',          # Tóm tắt bài viết (nếu có)
+                    "summary": item.p.text.strip() if item.p else '',          # Tóm tắt bài viết (nếu có
                     "time": time_tag.text.strip() if time_tag else '',         # Thời gian đăng (nếu tìm thấy)
                     "author": author_tag.text.strip() if author_tag else ''    # Tác giả (nếu tìm thấy)
                 }
